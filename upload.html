@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/upload.css">
+    <title>Dashboard</title>
+</head>
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-items">
+                <div class="logo" onclick=" window.location.href='/' "></div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Welcome <span class="arrow">&#9662;</span></button>
+                    <div class="dropdown-content" id="myDropdown">
+                      <a href="#">My profile</a>
+                      <a href="#">Settings</a>
+                      <a href="#">Log out</a>
+                    </div>
+                </div>
+            </div>
+           
+        </nav>
+    </div>
+</header>
+<body>
+    <div class="heading">
+        <h2>Dashboard</h2>
+    </div>
+    <div class="droplists">
+        <div id="dropdown1" class="droplist">
+            <button onclick="toggleDropdown('dropdown1')">
+                Upload Your Resume
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="content">
+                <button>Upload or Drag your resume over here</button>
+                <ul>
+                    <li>File should be in .pdf or .docx format</li>
+                    <li>File size should not be greater than 5Mb</li>
+                </ul>
+            </div>
+        </div>
+        <div id="dropdown2" class="droplist">
+            <button onclick="toggleDropdown('dropdown2')">
+                Profiles
+                <span class="arrow">&#9662;</span>
+            </button>
+            <div class="content">
+                <div id="container-2">
+                    <table id="dataTable">
+                      <thead>
+                        <tr id="tableHeaders"></tr>
+                      </thead>
+                      <tbody id="tableBody">
+                        <!-- Rows will be added dynamically -->
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        
+    </div>
+</footer>
+</html>
