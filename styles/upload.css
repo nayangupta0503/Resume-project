@@ -41,15 +41,15 @@ body.disable-controls .child-tab {
 .droplist button {
     width: 100%;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: left;
     cursor: pointer;
     background-color: lightblue;
-    border: none;
     outline: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid #ccc;
 }
 
 .droplist .arrow {
@@ -247,6 +247,7 @@ li{
   
   .view-btn {
     background-color: #007bff; /* Blue */
+    font-size: 1rem;
   }
   
   .download-btn {
@@ -298,3 +299,10 @@ li{
     opacity: 0.8;
   }
   
+.upload-btn{
+  width: fit-content;
+}
+
+.upload{
+  width: fit-content;
+}
